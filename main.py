@@ -1,8 +1,5 @@
 import math, os
 
-
-
-
 items = []
 items_price = []
 participant = 0
@@ -45,9 +42,11 @@ def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
+
+# START
+
 clear_terminal()
 print("KALKULASI BIAYA PERJALANAN WISATA")
-
 
 participant = input("Masukkan jumlah peserta:")
 
@@ -57,7 +56,7 @@ while(next_input):
     print("Tambah Item Baru")
     print("----------")
     item = input("Nama Item: ")
-    price = input("Harga/Biaya: ")
+    price = input("Harga/Biaya : ")
     add_item(item, price)
     restart = input("Apakah ingin menambahkan produk lagi? (Y/N)")
 
